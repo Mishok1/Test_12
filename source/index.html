@@ -12,7 +12,83 @@
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
+  <header class="header">
+
+      <div class="header__subheader subheader">
+        <div class="subheader__container container">
+          <div class="subheader__language language">
+            <button class="language__button language__button--active" type="button" aria-label="Выбрать русский язык">RU</button>
+            <button class="language__button" type="button" aria-label="Select English language">EN</button>
+          </div>
+          <address class="subheader__address address">
+            <a class="address__link address__link--phone" href="tel:+75555553750" aria-label="Позвонить по номеру +7 555 555-37-50">+7 555 555-37-50</a>
+          </address>
+        </div>
+      </div>
+
+      <div class="subheader subheader--desktop">
+        <div class="subheader__container container">
+          <address class="subheader__address address">
+            <a class="address__link address__link--map" href="https://yandex.ru/maps/org/silent_hill_hotel/43982718327/?ll=30.210168%2C-2.854939&z=8.67" aria-label="Открыть карту" target="_blank">Сайлент-Хилл</a>
+            <a class="address__link address__link--phone" href="tel:+75555553750" aria-label="Позвонить по номеру +7 555 555-37-50">+7 555 555-37-50</a>
+            <p class="address__text">Ежедневно 9:00 — 21:00</p>
+          </address>
+
+          <ul class="subheader__list">
+            <li class="subheader__item">
+              <a class="subheader__link" href="#delivery">Доставка</a>
+            </li>
+            <li class="subheader__item">
+              <a class="subheader__link" href="#pay">Оплата</a>
+            </li>
+            <li class="subheader__item">
+              <a class="subheader__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__container container">
+        <ul class="header__list">
+          <li class="header__item">
+            <button id="menu-button" class="header__button header__button--active" type="button" aria-label="Меню">
+              <img class="logo__icon" src="./images/burger-close.svg" width="20" height="20" alt="Охотник.">
+            </button>
+          </li>
+          <li class="header__item">
+            <button class="header__button" type="button" aria-label="Сравнение">
+              <img class="logo__icon" src="./images/hunter.svg" width="20" height="20" alt="Охотник.">
+            </button>
+          </li>
+        </ul>
+        <a class="header__logo logo" href="/" aria-label="На главную">
+          <img class="logo__icon" src="./images/logo.svg" width="56" height="56" alt="Логотип.">
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <button class="header__button" type="button" aria-label="Избранное">
+              <img class="logo__icon" src="./images/heart.svg" width="20" height="20" alt="Сердце.">
+            </button>
+          </li>
+          <li class="header__item">
+            <button class="header__button header__button--count" type="button" aria-label="Корзина" data-count="20">
+              <img class="logo__icon" src="./images/chest.svg" width="20" height="20" alt="Сундук.">
+            </button>
+          </li>
+        </ul>
+
+
+        <div class="header__search search">
+          <form class="search__form" action="#" method="post">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="search__input" type="text" name="search" id="search" placeholder="Поиск товаров..." aria-label="Поиск товаров">
+            <button class="search__submit" type="submit" aria-label="Поиск">
+              <img class="search__icon" src="./images/search.svg" width="24" height="24" alt="Лупа.">
+            </button>
+          </form>
+      </div>
+
+  </header>
   <main>
     <h1>Заголовок</h1>
     <!--  <picture>

@@ -1,0 +1,46 @@
+.address {
+  font-family: "Maza", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  vertical-align: middle;
+
+  @include desktop {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.address__link {
+  color: #343A3F;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+  }
+
+  &--phone {
+    &::before {
+      background: url("../../icons/phone.svg") no-repeat center;
+    }
+  }
+
+  &--map {
+    gap: 4px;
+
+    &::before {
+      background: url("../../icons/map.svg") no-repeat center;
+    }
+  }
+}
+
+.address__text {
+  @include desktop {
+    margin: 0 0 0 345px;
+  }
+}

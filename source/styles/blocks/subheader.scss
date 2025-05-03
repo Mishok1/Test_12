@@ -1,0 +1,61 @@
+.subheader {
+  padding: 4px 0;
+  background-color: #F4F4F4;
+  color: #343A3F;
+  display: block;
+  font-family: "Maza", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+
+  @include desktop {
+    padding: 8px 0;
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+}
+
+.subheader__container {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    padding: 0 40px;
+  }
+}
+
+.subheader__language {
+  left: 22px;
+}
+
+.address__text {
+  @include desktop {
+    margin: 0;
+    font-style: normal;
+  }
+}
+
+.subheader__list {
+  @include desktop {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.subheader__link {
+  color: #343A3F;
+  display: block;
+}

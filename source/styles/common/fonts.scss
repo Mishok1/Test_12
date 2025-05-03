@@ -1,7 +1,15 @@
 @font-face {
-  font-family: "";
+  font-family: "Maza";
   font-style: normal;
   font-weight: 400;
-  src: url(".woff2") format("woff2"), url(".woff") format("woff");
+  src: url("../../fonts/Maza.woff2") format("woff2"), url("../../fonts/Maza.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/TenorSans-Regular.woff2") format("woff2"), url("../../fonts/TenorSans-Regular.woff") format("woff");
   font-display: swap;
 }
