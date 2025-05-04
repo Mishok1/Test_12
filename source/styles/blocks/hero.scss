@@ -1,0 +1,77 @@
+.hero {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 32px 0 186px;
+  color: #FFFFFF;
+  background:
+    image-set(url("../../images/gamepad@1x.webp") type("image/webp") 1x,
+      url("../../images/gamepad@1x.png") type("image/png") 1x) no-repeat bottom right,
+    linear-gradient(109.25deg, rgba(103, 40, 112, 0.9) 29.72%, #4FE0FF 98.58%);
+
+  @include desktop {
+    padding: 84px 0 83px;
+    background:
+      image-set(url("../../images/gamepad-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/gamepad-desktop@2x.png") type("image/png") 2x) no-repeat bottom right,
+      linear-gradient(95.31deg, #672870 20%, #4FE0FF 100%);
+  }
+}
+
+.hero__container {
+  padding: 0 15px;
+
+  @include desktop {
+    padding: 0 100px;
+  }
+}
+
+.hero__title {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 14px;
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 36px;
+    width: 639px;
+    margin: 0 0 26px;
+  }
+}
+
+.hero__description {
+  margin: 0 0 20px;
+
+  @include desktop {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+
+    @include desktop {
+      display: block;
+      font-size: 18px;
+      line-height: 24px;
+      width: 639px;
+      margin: 0 0 26px;
+    }
+  }
+}
+
+.hero__link {
+  font-family: "Maza", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #672870;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  display: block;
+  padding: 16px;
+  width: 149px;
+}
