@@ -1,0 +1,24 @@
+.socials {}
+
+.socials__link {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3.33px;
+  background-color: #F4F4F4;
+  display: block;
+
+  @include desktop {
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.socials__icon {
+  @include desktop {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+}

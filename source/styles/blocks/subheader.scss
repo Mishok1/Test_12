@@ -45,6 +45,8 @@
 }
 
 .subheader__list {
+  display: none;
+
   @include desktop {
     display: flex;
     gap: 16px;
@@ -55,7 +57,10 @@
   }
 }
 
-.subheader__link {
-  color: #343A3F;
-  display: block;
+.subheader__anchors {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
 }

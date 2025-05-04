@@ -1,0 +1,25 @@
+.custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F4F4F4;
+  border: none;
+  border-radius: 8px;
+  font-family: "Maza", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #4888FF;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../../icons/plus.svg") no-repeat center;
+
+    @include desktop {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

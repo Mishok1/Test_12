@@ -3,11 +3,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  vertical-align: middle;
+  color: #343A3F;
 
   @include desktop {
     display: flex;
     gap: 12px;
+  }
+
+  &--size {
+    font-size: 16px;
   }
 }
 
@@ -40,7 +44,23 @@
 }
 
 .address__text {
+  font-style: normal;
+  margin: 0;
+
   @include desktop {
     margin: 0 0 0 345px;
+  }
+
+  &--watch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("../../icons/watch.svg") no-repeat center;
+    }
   }
 }

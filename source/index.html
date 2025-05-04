@@ -34,15 +34,15 @@
             <p class="address__text">Ежедневно 9:00 — 21:00</p>
           </address>
 
-          <ul class="subheader__list">
-            <li class="subheader__item">
-              <a class="subheader__link" href="#delivery">Доставка</a>
+          <ul class="subheader__anchors anchors">
+            <li class="anchors__item">
+              <a class="anchors__link" href="#delivery">Доставка</a>
             </li>
-            <li class="subheader__item">
-              <a class="subheader__link" href="#pay">Оплата</a>
+            <li class="anchors__item">
+              <a class="anchors__link" href="#pay">Оплата</a>
             </li>
-            <li class="subheader__item">
-              <a class="subheader__link" href="#contacts">Контакты</a>
+            <li class="anchors__item">
+              <a class="anchors__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -52,12 +52,12 @@
         <ul class="header__list">
           <li class="header__item">
             <button id="menu-button" class="header__button header__button--active" type="button" aria-label="Меню">
-              <img class="logo__icon" src="./images/burger-close.svg" width="20" height="20" alt="Охотник.">
+              <img class="header__icon" src="./images/burger-close.svg" width="20" height="20" alt="Охотник.">
             </button>
           </li>
           <li class="header__item">
             <button class="header__button" type="button" aria-label="Сравнение">
-              <img class="logo__icon" src="./images/hunter.svg" width="20" height="20" alt="Охотник.">
+              <img class="header__icon" src="./images/hunter.svg" width="20" height="20" alt="Охотник.">
             </button>
           </li>
         </ul>
@@ -67,27 +67,369 @@
         <ul class="header__list">
           <li class="header__item">
             <button class="header__button" type="button" aria-label="Избранное">
-              <img class="logo__icon" src="./images/heart.svg" width="20" height="20" alt="Сердце.">
+              <img class="header__icon" src="./images/heart.svg" width="20" height="20" alt="Сердце.">
             </button>
           </li>
           <li class="header__item">
             <button class="header__button header__button--count" type="button" aria-label="Корзина" data-count="20">
-              <img class="logo__icon" src="./images/chest.svg" width="20" height="20" alt="Сундук.">
+              <img class="header__icon" src="./images/chest.svg" width="20" height="20" alt="Сундук.">
             </button>
           </li>
         </ul>
 
+        <button id="menu-button" class="header__button header__button--active header__button--size" type="button" aria-label="Меню">
+          <img class="header__icon" src="./images/burger-desktop.svg" width="41" height="16" alt="Бургер.">
+        </button>
+
+        <ul class="header__list header__list--desktop">
+          <li class="header__item">
+            <button class="header__button" type="button" aria-label="Избранное">
+              <img class="header__icon" src="./images/heart.svg" width="24" height="24" alt="Сердце.">
+            </button>
+          </li>
+          <li class="header__item">
+            <button class="header__button" type="button" aria-label="Сравнение">
+              <img class="header__icon" src="./images/hunter.svg" width="24" height="24" alt="Охотник.">
+            </button>
+          </li>
+          <li class="header__item">
+            <button class="header__button" type="button" aria-label="Корзина" data-count="20">
+              <img class="header__icon" src="./images/chest.svg" width="24" height="24" alt="Сундук.">
+            </button>
+          </li>
+        </ul>
 
         <div class="header__search search">
           <form class="search__form" action="#" method="post">
             <label class="visually-hidden" for="search">Поиск</label>
             <input class="search__input" type="text" name="search" id="search" placeholder="Поиск товаров..." aria-label="Поиск товаров">
             <button class="search__submit" type="submit" aria-label="Поиск">
+              <span class="search__text">Найти</span>
               <img class="search__icon" src="./images/search.svg" width="24" height="24" alt="Лупа.">
             </button>
           </form>
+        </div>
       </div>
 
+      <!-- <button class="header__custom custom" type="button">Собрать компьютер</button> -->
+
+      <div class="header__language language">
+        <button class="language__button language__button--active" type="button" aria-label="Выбрать русский язык">RU</button>
+        <button class="language__button" type="button" aria-label="Select English language">EN</button>
+      </div>
+
+      <ul class="header__socials socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://t.me/+75555553750" aria-label="Написать нам в телеграм" target="_blank">
+            <svg class="socials__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_4_1100)">
+                <path d="M19.6082 1.63862C19.45 1.49378 19.256 1.39369 19.0462 1.34862C18.8365 1.30355 18.6185 1.31514 18.4147 1.38218L0.829223 7.17909C0.349965 7.33706 0.0249649 7.76487 0.001254 8.2689C-0.0224179 8.77296 0.260981 9.2294 0.723246 9.43171L5.07227 11.3345L6.38442 17.4203C6.43891 17.6731 6.56723 17.8983 6.83907 17.9675C7.11403 18.0376 7.30828 17.8873 7.51344 17.7337L10.7408 15.3171L14.5138 18.4046C14.7336 18.5845 15.0022 18.6783 15.276 18.6783C15.4087 18.6782 15.5405 18.6563 15.6661 18.6136C16.0632 18.4789 16.3576 18.1548 16.4536 17.7467L19.9679 2.80519C20.0169 2.59632 20.0094 2.37818 19.9462 2.17316C19.883 1.96815 19.7663 1.78365 19.6082 1.63862ZM7.79457 12.4249C7.79243 12.43 7.79032 12.4357 7.78832 12.4426L7.06082 14.9843L6.24895 11.2189L11.8316 8.1171L7.92848 12.1983C7.86727 12.2627 7.82148 12.3402 7.79457 12.4249ZM8.02547 15.8829L8.3559 14.7284L8.67196 13.6241L9.80442 14.5508L8.02547 15.8829ZM18.8244 2.5362L15.3102 17.4777C15.3084 17.4851 15.3061 17.4953 15.2889 17.5012C15.2718 17.5069 15.2636 17.5003 15.2577 17.4955L11.1291 14.1171L11.1288 14.1168L9.21598 12.5515L15.3614 6.12577C15.4585 6.02421 15.516 5.8912 15.5234 5.75087C15.5309 5.61054 15.4877 5.4722 15.4018 5.36097C15.316 5.24972 15.1931 5.17295 15.0554 5.14461C14.9178 5.11626 14.7745 5.13821 14.6517 5.20648L5.55203 10.2623L1.19411 8.35554C1.18082 8.34976 1.17352 8.34651 1.17457 8.32405C1.17563 8.30167 1.18321 8.29913 1.19696 8.2946L18.7824 2.49773C18.7909 2.49495 18.8005 2.49175 18.8147 2.50464C18.8288 2.51761 18.8265 2.52745 18.8244 2.5362Z" fill="#343A3F"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_4_1100">
+                  <rect width="20" height="20" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://wa.me/75555553750" aria-label="Написать нам в What's up" target="_blank">
+            <svg class="socials__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_4_1095)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7747 2.72484C15.0205 0.968642 12.6877 0.00102539 10.2023 0C5.08112 0 0.913171 4.16783 0.911121 9.29042C0.910417 10.928 1.33818 12.5265 2.15129 13.9355L0.833191 18.75L5.75861 17.4579C7.11576 18.1983 8.64368 18.5884 10.1985 18.5889H10.2025C15.3231 18.5889 19.4915 14.4207 19.4934 9.29786C19.4945 6.81518 18.529 4.48096 16.7747 2.72484ZM10.2023 17.0197H10.1991C8.81348 17.0191 7.45449 16.6468 6.26864 15.9433L5.9868 15.7759L3.06397 16.5426L3.84409 13.6929L3.6604 13.4008C2.88737 12.1712 2.47915 10.7501 2.47985 9.29097C2.48146 5.0332 5.94582 1.5692 10.2054 1.5692C12.2681 1.56987 14.2071 2.37416 15.665 3.83385C17.123 5.29353 17.9255 7.23378 17.9248 9.29727C17.923 13.5554 14.4589 17.0197 10.2023 17.0197ZM14.4382 11.236C14.2062 11.1197 13.0647 10.5583 12.8518 10.4807C12.6392 10.4032 12.4843 10.3646 12.3297 10.597C12.1748 10.8293 11.73 11.3523 11.5945 11.5071C11.459 11.6621 11.3237 11.6815 11.0915 11.5653C10.8593 11.4491 10.1113 11.2039 9.22454 10.413C8.53446 9.79737 8.06858 9.03714 7.93308 8.80485C7.79782 8.57229 7.93191 8.45877 8.03492 8.33103C8.28622 8.01896 8.53788 7.69177 8.61526 7.53694C8.69272 7.38196 8.65393 7.24637 8.5958 7.13021C8.53788 7.01405 8.07362 5.87135 7.8802 5.40638C7.69162 4.95389 7.50037 5.01498 7.35778 5.00792C7.22251 5.00115 7.06768 4.99977 6.91285 4.99977C6.7581 4.99977 6.50656 5.05778 6.29372 5.29034C6.08096 5.52278 5.48131 6.08434 5.48131 7.22704C5.48131 8.36973 6.31317 9.47361 6.42921 9.62856C6.54523 9.78354 8.06629 12.1284 10.395 13.1339C10.9489 13.3733 11.3813 13.516 11.7186 13.623C12.2747 13.7997 12.7807 13.7748 13.1808 13.715C13.6268 13.6483 14.5542 13.1534 14.7478 12.6111C14.9412 12.0688 14.9412 11.604 14.8831 11.5071C14.8252 11.4103 14.6703 11.3523 14.4382 11.236Z" fill="#343A3F"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_4_1095">
+                  <rect width="20" height="20" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <!-- mobile -->
+      <div class="header__menu menu">
+        <div class="menu__container container">
+          <address class="menu__address address address--size">
+            <a class="address__link address__link--map" href="https://yandex.ru/maps/org/silent_hill_hotel/43982718327/?ll=30.210168%2C-2.854939&z=8.67" aria-label="Открыть карту" target="_blank">г.Москва</a>
+            <p class="address__text address__text--watch">Ежедневно 9:00 — 21:00</p>
+          </address>
+
+          <ul class="menu__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="https://t.me/+75555553750" aria-label="Написать нам в телеграм" target="_blank">
+                <svg class="socials__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_4_1100)">
+                    <path d="M19.6082 1.63862C19.45 1.49378 19.256 1.39369 19.0462 1.34862C18.8365 1.30355 18.6185 1.31514 18.4147 1.38218L0.829223 7.17909C0.349965 7.33706 0.0249649 7.76487 0.001254 8.2689C-0.0224179 8.77296 0.260981 9.2294 0.723246 9.43171L5.07227 11.3345L6.38442 17.4203C6.43891 17.6731 6.56723 17.8983 6.83907 17.9675C7.11403 18.0376 7.30828 17.8873 7.51344 17.7337L10.7408 15.3171L14.5138 18.4046C14.7336 18.5845 15.0022 18.6783 15.276 18.6783C15.4087 18.6782 15.5405 18.6563 15.6661 18.6136C16.0632 18.4789 16.3576 18.1548 16.4536 17.7467L19.9679 2.80519C20.0169 2.59632 20.0094 2.37818 19.9462 2.17316C19.883 1.96815 19.7663 1.78365 19.6082 1.63862ZM7.79457 12.4249C7.79243 12.43 7.79032 12.4357 7.78832 12.4426L7.06082 14.9843L6.24895 11.2189L11.8316 8.1171L7.92848 12.1983C7.86727 12.2627 7.82148 12.3402 7.79457 12.4249ZM8.02547 15.8829L8.3559 14.7284L8.67196 13.6241L9.80442 14.5508L8.02547 15.8829ZM18.8244 2.5362L15.3102 17.4777C15.3084 17.4851 15.3061 17.4953 15.2889 17.5012C15.2718 17.5069 15.2636 17.5003 15.2577 17.4955L11.1291 14.1171L11.1288 14.1168L9.21598 12.5515L15.3614 6.12577C15.4585 6.02421 15.516 5.8912 15.5234 5.75087C15.5309 5.61054 15.4877 5.4722 15.4018 5.36097C15.316 5.24972 15.1931 5.17295 15.0554 5.14461C14.9178 5.11626 14.7745 5.13821 14.6517 5.20648L5.55203 10.2623L1.19411 8.35554C1.18082 8.34976 1.17352 8.34651 1.17457 8.32405C1.17563 8.30167 1.18321 8.29913 1.19696 8.2946L18.7824 2.49773C18.7909 2.49495 18.8005 2.49175 18.8147 2.50464C18.8288 2.51761 18.8265 2.52745 18.8244 2.5362Z" fill="#343A3F"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_1100">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://wa.me/75555553750" aria-label="Написать нам в What's up" target="_blank">
+                <svg class="socials__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_4_1095)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7747 2.72484C15.0205 0.968642 12.6877 0.00102539 10.2023 0C5.08112 0 0.913171 4.16783 0.911121 9.29042C0.910417 10.928 1.33818 12.5265 2.15129 13.9355L0.833191 18.75L5.75861 17.4579C7.11576 18.1983 8.64368 18.5884 10.1985 18.5889H10.2025C15.3231 18.5889 19.4915 14.4207 19.4934 9.29786C19.4945 6.81518 18.529 4.48096 16.7747 2.72484ZM10.2023 17.0197H10.1991C8.81348 17.0191 7.45449 16.6468 6.26864 15.9433L5.9868 15.7759L3.06397 16.5426L3.84409 13.6929L3.6604 13.4008C2.88737 12.1712 2.47915 10.7501 2.47985 9.29097C2.48146 5.0332 5.94582 1.5692 10.2054 1.5692C12.2681 1.56987 14.2071 2.37416 15.665 3.83385C17.123 5.29353 17.9255 7.23378 17.9248 9.29727C17.923 13.5554 14.4589 17.0197 10.2023 17.0197ZM14.4382 11.236C14.2062 11.1197 13.0647 10.5583 12.8518 10.4807C12.6392 10.4032 12.4843 10.3646 12.3297 10.597C12.1748 10.8293 11.73 11.3523 11.5945 11.5071C11.459 11.6621 11.3237 11.6815 11.0915 11.5653C10.8593 11.4491 10.1113 11.2039 9.22454 10.413C8.53446 9.79737 8.06858 9.03714 7.93308 8.80485C7.79782 8.57229 7.93191 8.45877 8.03492 8.33103C8.28622 8.01896 8.53788 7.69177 8.61526 7.53694C8.69272 7.38196 8.65393 7.24637 8.5958 7.13021C8.53788 7.01405 8.07362 5.87135 7.8802 5.40638C7.69162 4.95389 7.50037 5.01498 7.35778 5.00792C7.22251 5.00115 7.06768 4.99977 6.91285 4.99977C6.7581 4.99977 6.50656 5.05778 6.29372 5.29034C6.08096 5.52278 5.48131 6.08434 5.48131 7.22704C5.48131 8.36973 6.31317 9.47361 6.42921 9.62856C6.54523 9.78354 8.06629 12.1284 10.395 13.1339C10.9489 13.3733 11.3813 13.516 11.7186 13.623C12.2747 13.7997 12.7807 13.7748 13.1808 13.715C13.6268 13.6483 14.5542 13.1534 14.7478 12.6111C14.9412 12.0688 14.9412 11.604 14.8831 11.5071C14.8252 11.4103 14.6703 11.3523 14.4382 11.236Z" fill="#343A3F"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_1095">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="menu__navigation navigation">
+
+            <ul class="navigation__list" data-level="1">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--catalog" type="button" aria-label="Перейти в каталог" data-next="catalog">Каталог</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--promotion" type="button" aria-label="Перейти в каталог">Акции</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--hot" type="button" aria-label="Перейти в каталог" data-next="hot">Горячее предложение</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--gifts" type="button" aria-label="Перейти в каталог" data-next="gifts">Подарочные наборы</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--events" type="button" aria-label="Перейти в каталог" data-next="events">События</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--brands" type="button" aria-label="Перейти в каталог">Наши бренды</button>
+              </li>
+            </ul>
+
+
+            <!-- level 2 -->
+            <ul class="navigation__list" hidden id="catalog" data-level="2">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся в каталог" data-back>Каталог</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--smartphones" type="button" aria-label="Перейти в каталог" data-next="smartphones">Смартфоны и гаджеты</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--laptops" type="button" aria-label="Перейти в каталог" data-next="laptops">Ноутбуки и компьютеры</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--desktops" type="button" aria-label="Перейти в каталог" data-next="desktops">Телевизоры и цифровое ТВ</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--audio" type="button" aria-label="Перейти в каталог">Аудиотехника</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--promotion" type="button" aria-label="Перейти в каталог">Акции</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--new" type="button" aria-label="Перейти в каталог">Новинки</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="hot" data-level="2">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Горячее предложение</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 3</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 4</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 5</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 6</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="gifts" data-level="2">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Подарочные наборы</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Подарочные наборы 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Подарочные наборы 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Подарочные наборы 3</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">Подарочные наборы 4</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="events" data-level="2">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>События</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 3</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 4</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 5</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 6</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 7</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 8</button>
+              </li>
+            </ul>
+
+
+            <!-- level 3 -->
+            <ul class="navigation__list" hidden id="smartphones" data-level="3">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Смартфоны</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="123">Apple iPhone</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="227" data-next="gadgets">Смартфоны</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="120">iPhone 16</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="30">Складные</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="120">realme</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="100">Huawei Mate X6</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="23">Кнопочные</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="17">Домашние</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="27">Samsung</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="laptops" data-level="3">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Ноутбуки и компьютеры</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1">Ноутбук Apple</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="5">Компьютер Ultra</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1234">Ноутбук Max</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="32">Компьютер Xiaomi</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="desktops" data-level="3">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Телевизоры и цифровое ТВ</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1">Телевизор 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="5">Телевизор 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="534">Телевизор 3</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="2">Телевизор 4</button>
+              </li>
+            </ul>
+
+            <!-- level 4 -->
+            <ul class="navigation__list" hidden id="gadgets" data-level="4">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Гаджеты</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="15">Смарт-часы</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="34">Смарт-кольца</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="21">Наушники</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="12">Гарнитуры</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="42">Портативное аудио</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="46">Умные гаджеты</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="49">Очки VR</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="32">Для блогеров</button>
+              </li>
+            </ul>
+
+          </nav>
+
+
+
+          <button class="menu__custom custom" type="button">Собрать компьютер</button>
+
+          <ul class="menu__anchors anchors">
+            <li class="anchors__item">
+              <a class="anchors__link" href="#delivery">Доставка</a>
+            </li>
+            <li class="anchors__item">
+              <a class="anchors__link" href="#pay">Оплата</a>
+            </li>
+            <li class="anchors__item">
+              <a class="anchors__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
   </header>
   <main>
     <h1>Заголовок</h1>

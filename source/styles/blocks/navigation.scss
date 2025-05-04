@@ -1,0 +1,163 @@
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  // display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.navigation__item {
+  &::marker {}
+}
+
+.navigation__button {
+  background: #F4F4F4;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-family: "Maza", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 12px 6px 12px 12px;
+  display: flex;
+  align-items: center;
+  color: #343A3F;
+  gap: 17px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url('../../icons/smartphone.svg') no-repeat center;
+  }
+
+  &--catalog {
+    &::before {
+      background-image: url('../../icons/menu/catalog.svg');
+    }
+  }
+
+  &--promotion {
+    &::before {
+      background-image: url('../../icons/menu/promotion.svg');
+    }
+  }
+
+  &--hot {
+    &::before {
+      background-image: url('../../icons/menu/hot.svg');
+    }
+  }
+
+  &--gifts {
+    &::before {
+      background-image: url('../../icons/menu/gifts.svg');
+    }
+  }
+
+  &--events {
+    &::before {
+      background-image: url('../../icons/menu/events.svg');
+    }
+  }
+
+  &--brands {
+    &::before {
+      background-image: url('../../icons/menu/brands.svg');
+    }
+  }
+
+  &--smartphones {
+    &::before {
+      background-image: url('../../icons/smartphone.svg');
+    }
+  }
+
+  &--laptops {
+    &::before {
+      background-image: url('../../icons/menu/laptops.svg');
+    }
+  }
+
+  &--desktops {
+    &::before {
+      background-image: url('../../icons/menu/desktops.svg');
+    }
+  }
+
+  &--audio {
+    &::before {
+      background-image: url('../../icons/menu/audio.svg');
+    }
+  }
+
+  &--promotion {
+    &::before {
+      background-image: url('../../icons/menu/promotion.svg');
+    }
+  }
+
+  &--new {
+    &::before {
+      background-image: url('../../icons/menu/new.svg');
+    }
+  }
+
+  &[data-next] {
+    // position: relative;
+    &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      background: url('../../icons/arrow.svg') no-repeat center;
+      margin: 0 0 0 auto;
+      order: 2;
+      // position: absolute;
+      // right: 6px;
+      // top: 50%;
+      // transform: translateY(-50%);
+    }
+  }
+
+  &[data-count] {
+    gap: 8px;
+
+    &::before {
+      background: none;
+      width: unset;
+      height: unset;
+      order: 1;
+
+      content: attr(data-count);
+      font-family: "Maza", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: #343A3F80;
+    }
+  }
+
+  &--back {
+    background: none;
+    padding-left: 0;
+    gap: 29px;
+    font-size: 20px;
+
+    &::before {
+      background-image: url('../../icons/back-arrow.svg');
+    }
+
+    &::after {
+      display: none;
+    }
+
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+}

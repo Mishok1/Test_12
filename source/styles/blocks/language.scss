@@ -58,4 +58,13 @@
   &--active {
     opacity: 1;
   }
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active,
+  &:focus {
+    opacity: .4;
+  }
 }

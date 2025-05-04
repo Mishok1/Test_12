@@ -1,0 +1,19 @@
+.anchors {}
+
+.anchors__link {
+  color: #343A3F;
+  display: block;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E8E8E8;
+    margin: 10px 0 0;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

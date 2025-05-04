@@ -1,0 +1,36 @@
+.menu {
+  background-color: antiquewhite;
+}
+
+.menu__address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu__container {
+  padding: 0 16px;
+}
+
+.menu__socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 6px;
+}
+
+.menu__anchors {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu__custom {
+  padding: 12px 0;
+  width: 100%;
+  gap: 10px;
+}
