@@ -227,19 +227,19 @@
                 <button class="navigation__button navigation__button--desktops" type="button" aria-label="Перейти в каталог" data-next="desktops">Телевизоры и цифровое ТВ</button>
               </li>
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--audio" type="button" aria-label="Перейти в каталог">Аудиотехника</button>
+                <button class="navigation__button navigation__button--audio" type="button" aria-label="Перейти в каталог" data-next="audio">Аудиотехника</button>
               </li>
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--promotion" type="button" aria-label="Перейти в каталог">Акции</button>
+                <button class="navigation__button navigation__button--promotion" type="button" aria-label="Перейти в каталог" data-next="promotion">Акции</button>
               </li>
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--new" type="button" aria-label="Перейти в каталог">Новинки</button>
+                <button class="navigation__button navigation__button--new" type="button" aria-label="Перейти в каталог" data-next="new">Новинки</button>
               </li>
             </ul>
 
             <ul class="navigation__list" hidden id="hot" data-level="2">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Горячее предложение</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Горячее предложение</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог">Горячее предложение 1</button>
@@ -263,7 +263,7 @@
 
             <ul class="navigation__list" hidden id="gifts" data-level="2">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Подарочные наборы</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Подарочные наборы</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог">Подарочные наборы 1</button>
@@ -281,7 +281,7 @@
 
             <ul class="navigation__list" hidden id="events" data-level="2">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>События</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>События</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог">События 1</button>
@@ -313,7 +313,7 @@
             <!-- level 3 -->
             <ul class="navigation__list" hidden id="smartphones" data-level="3">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Смартфоны</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Смартфоны</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="123">Apple iPhone</button>
@@ -346,7 +346,7 @@
 
             <ul class="navigation__list" hidden id="laptops" data-level="3">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Ноутбуки и компьютеры</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Ноутбуки и компьютеры</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1">Ноутбук Apple</button>
@@ -364,7 +364,7 @@
 
             <ul class="navigation__list" hidden id="desktops" data-level="3">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Телевизоры и цифровое ТВ</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Телевизоры и цифровое ТВ</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1">Телевизор 1</button>
@@ -380,10 +380,73 @@
               </li>
             </ul>
 
+            <ul class="navigation__list" hidden id="audio" data-level="3">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Аудиотехника</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="2">Аудиотехника 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="4">Аудиотехника 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="5">Аудиотехника 3</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1">Аудиотехника 4</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="6">Аудиотехника 4</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="7">Аудиотехника 4</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="promotion" data-level="3">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Акции</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="2">Акции 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="4">Акции 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="5">Акции 3</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="1">Акции 4</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="6">Акции 4</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="7">Акции 4</button>
+              </li>
+            </ul>
+
+            <ul class="navigation__list" hidden id="promotion" data-level="3">
+              <li class="navigation__item">
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Новинки</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="2">Новинки 1</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="4">Новинки 2</button>
+              </li>
+              <li class="navigation__item">
+                <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="5">Новинки 3</button>
+              </li>
+            </ul>
+
             <!-- level 4 -->
             <ul class="navigation__list" hidden id="gadgets" data-level="4">
               <li class="navigation__item">
-                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на главную" data-back>Гаджеты</button>
+                <button class="navigation__button navigation__button--back" type="button" aria-label="Вернутся на уровень выше" data-back>Гаджеты</button>
               </li>
               <li class="navigation__item">
                 <button class="navigation__button" type="button" aria-label="Перейти в каталог" data-count="15">Смарт-часы</button>
@@ -415,7 +478,7 @@
 
 
 
-          <button class="menu__custom custom" type="button">Собрать компьютер</button>
+          <button class="menu__custom custom" id="custom-button" type="button">Собрать компьютер</button>
 
           <ul class="menu__anchors anchors">
             <li class="anchors__item">
@@ -430,17 +493,24 @@
           </ul>
         </div>
       </div>
+
+
+
+      <!-- modal -->
+      <div class="modal modal--close" id="modal">
+        <div class="modal__wrapper" id="modal-wrapper">
+          <p class="modal__description">Собираем компьютер<br> и покупаем наши товары!</p>
+             <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="images/computer@1x.webp 1x, images/computer@2x.webp 2x" width="" height="">
+                <source type="image/webp" srcset="images/computer@1x.webp 1x, images/computer@2x.webp 2x" width="248" height="130">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="images/computer@1x.jpg 1x, images/computer@2x.jpg 2x" width="" height="">
+                <img class="modal__image" src="images/computer@1x.jpg" srcset="images/computer@2x.jpg 2x" width="248" height="130" alt="Мышь собирает компьютер.">
+            </picture>
+        </div>
+      </div>
   </header>
   <main>
     <h1>Заголовок</h1>
-    <!--  <picture>
-        <source media="(min-width: 1440px)" type="image/webp" srcset="images/desktop@1x.webp 1x, images/desktop@2x.webp 2x" width="" height="">
-        <source media="(min-width: 768px)" type="image/webp" srcset="images/tablet@1x.webp 1x, images/tablet@2x.webp 2x" width="" height="">
-        <source type="image/webp" srcset="images/mobile@1x.webp 1x, images/mobile@2x.webp 2x" width="" height="">
-        <source media="(min-width: 1440px)" type="image/jpg" srcset="images/desktop@1x.jpg 1x, images/desktop@2x.jpg 2x" width="" height="">
-        <source media="(min-width: 768px)" type="image/jpg" srcset="images/tablet@1x.jpg 1x, images/tablet@2x.jpg 2x" width="" height="">
-        <img class="image" src="images/mobile@1x.jpg" srcset="images/mobile@2x.jpg 2x" width="" height="" alt=".">
-      </picture>  -->
   </main>
 </body>
 

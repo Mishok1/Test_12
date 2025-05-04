@@ -1,15 +1,17 @@
-.menu {
-  background-color: antiquewhite;
+.menu {}
+
+.menu__container {
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  // row-gap: 24px;
+  gap: 24px 0;
 }
 
 .menu__address {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.menu__container {
-  padding: 0 16px;
+  gap: 14px;
 }
 
 .menu__socials {
@@ -18,19 +20,27 @@
   list-style-type: none;
   display: flex;
   gap: 6px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.menu__navigation {
+  grid-column: 1 / 3;
 }
 
 .menu__anchors {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
   flex-direction: column;
-  gap: 16px;
+  grid-column: 1 / 3;
+  gap: 20px;
+  margin: 17px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
 }
 
 .menu__custom {
   padding: 12px 0;
   width: 100%;
   gap: 10px;
+  grid-column: 1 / 3;
 }

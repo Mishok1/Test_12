@@ -2,14 +2,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // display: flex;
-  flex-direction: column;
-  gap: 10px;
-
 }
 
-.navigation__item {
-  &::marker {}
+.navigation__item:not(:last-child) {
+  margin: 0 0 10px;
 }
 
 .navigation__button {
@@ -27,6 +23,7 @@
   color: #343A3F;
   gap: 17px;
   cursor: pointer;
+  min-height: 48px;
 
   &::before {
     content: "";

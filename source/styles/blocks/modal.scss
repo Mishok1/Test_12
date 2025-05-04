@@ -1,0 +1,74 @@
+@use "../common/variables.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  animation: open 1s;
+
+  &--close {
+    display: none;
+    animation: close 1s;
+  }
+}
+
+.modal__wrapper {
+  padding: 24px 16px;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #ffffff;
+  position: relative;
+  margin: auto;
+  width: 280px;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 456px;
+  }
+}
+
+.modal__description {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.modal__image {
+  display: block;
+  border-radius: 20px;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+
+  70% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+
+  70% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
