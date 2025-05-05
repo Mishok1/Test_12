@@ -31,7 +31,7 @@
     content: "";
     width: 1px;
     height: 12px;
-    background-color: #343A3F;
+    background-color: #343a3f;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -39,17 +39,17 @@
 }
 
 .language__button {
-  font-family: "Maza";
+  font-family: "Maza", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: #343A3F;
+  color: #343a3f;
   background: none;
   border: none;
   padding: 0;
   margin: 0;
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
 
   @include desktop {
     font-size: 16px;
@@ -60,11 +60,11 @@
   }
 
   &:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 
   &:active,
   &:focus {
-    opacity: .4;
+    opacity: 0.4;
   }
 }

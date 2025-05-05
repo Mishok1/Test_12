@@ -1,7 +1,7 @@
 
 const modal = document.querySelector('#modal');
 const modalWrapper = document.querySelector('#modal-wrapper');
-const customButton = document.querySelector('#custom-button');
+const customButtons = document.querySelectorAll('.custom');
 const navigationButtons = document.querySelectorAll('.navigation button:not([data-next]):not([data-back])');
 
 function openModalHandler() {
@@ -26,7 +26,9 @@ navigationButtons.forEach((button) => {
   button.addEventListener('click', openModalHandler);
 });
 
-customButton.addEventListener('click', openModalHandler);
+customButtons.forEach((button) => {
+  button.addEventListener('click', openModalHandler);
+});
 
 document.addEventListener('keydown', modalCloseEscHandler);
 

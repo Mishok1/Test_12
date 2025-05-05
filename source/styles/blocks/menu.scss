@@ -1,10 +1,7 @@
-.menu {}
-
 .menu__container {
   padding: 0 16px;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  // row-gap: 24px;
   gap: 24px 0;
 }
 

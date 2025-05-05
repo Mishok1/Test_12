@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: #343A3F;
+  color: #343a3f;
 
   @include desktop {
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 .address__link {
-  color: #343A3F;
+  color: #343a3f;
   font-style: normal;
   display: flex;
   align-items: center;
@@ -39,6 +39,12 @@
       background: url("../../icons/map.svg") no-repeat center;
     }
   }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #4888ff;
+  }
 }
 
 .address__text {
@@ -46,7 +52,8 @@
   margin: 0;
 
   @include desktop {
-    margin: 0 0 0 345px;
+    margin: 0 0 0 328px;
+    font-size: 15px;
   }
 
   &--watch {

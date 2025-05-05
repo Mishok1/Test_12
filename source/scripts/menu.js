@@ -19,4 +19,3 @@ document.querySelectorAll('[data-back]').forEach((button) => {
     document.querySelector(`.navigation__list[data-level="${prevLevel}"]`).hidden = false;
   });
 });
-

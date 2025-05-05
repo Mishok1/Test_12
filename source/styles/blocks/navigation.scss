@@ -2,14 +2,30 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 18.51px;
+  }
+}
+
+.navigation__item {
+  @include desktop {
+    flex-grow: 1;
+  }
 }
 
 .navigation__item:not(:last-child) {
   margin: 0 0 10px;
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .navigation__button {
-  background: #F4F4F4;
+  background: #f4f4f4;
   border: none;
   border-radius: 6px;
   width: 100%;
@@ -20,97 +36,54 @@
   padding: 12px 6px 12px 12px;
   display: flex;
   align-items: center;
-  color: #343A3F;
+  color: #343a3f;
   gap: 17px;
   cursor: pointer;
   min-height: 48px;
+
+  @include desktop {
+    padding: 11px 14px;
+    gap: 10px;
+    min-height: unset;
+    justify-content: center;
+  }
 
   &::before {
     content: "";
     width: 24px;
     height: 24px;
-    background: url('../../icons/smartphone.svg') no-repeat center;
-  }
+    background-color: #4888ff;
+    mask-repeat: no-repeat;
+    mask-position: center;
 
-  &--catalog {
-    &::before {
-      background-image: url('../../icons/menu/catalog.svg');
+    @include desktop {
+      width: 20px;
+      height: 20px;
+      background-color: rgba(72, 136, 255, 0.5);
     }
   }
 
-  &--promotion {
+  &:hover,
+  &:active,
+  &:focus {
+    color: #4888ff;
+
     &::before {
-      background-image: url('../../icons/menu/promotion.svg');
+      @include desktop {
+        background-color: #4888ff;
+      }
     }
   }
 
-  &--hot {
-    &::before {
-      background-image: url('../../icons/menu/hot.svg');
-    }
-  }
-
-  &--gifts {
-    &::before {
-      background-image: url('../../icons/menu/gifts.svg');
-    }
-  }
-
-  &--events {
-    &::before {
-      background-image: url('../../icons/menu/events.svg');
-    }
-  }
-
-  &--brands {
-    &::before {
-      background-image: url('../../icons/menu/brands.svg');
-    }
-  }
-
-  &--smartphones {
-    &::before {
-      background-image: url('../../icons/smartphone.svg');
-    }
-  }
-
-  &--laptops {
-    &::before {
-      background-image: url('../../icons/menu/laptops.svg');
-    }
-  }
-
-  &--desktops {
-    &::before {
-      background-image: url('../../icons/menu/desktops.svg');
-    }
-  }
-
-  &--audio {
-    &::before {
-      background-image: url('../../icons/menu/audio.svg');
-    }
-  }
-
-  &--promotion {
-    &::before {
-      background-image: url('../../icons/menu/promotion.svg');
-    }
-  }
-
-  &--new {
-    &::before {
-      background-image: url('../../icons/menu/new.svg');
-    }
-  }
 
   &[data-next] {
+
     // position: relative;
     &::after {
       content: "";
       width: 24px;
       height: 24px;
-      background: url('../../icons/arrow.svg') no-repeat center;
+      background: url("../../icons/arrow.svg") no-repeat center;
       margin: 0 0 0 auto;
       order: 2;
       // position: absolute;
@@ -134,7 +107,74 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 100%;
-      color: #343A3F80;
+      color: rgba(52, 58, 63, 0.5);
+    }
+  }
+
+  &--catalog {
+    &::before {
+      mask-image: url("../../icons/menu/catalog.svg");
+      background-color: #4888ff;
+    }
+  }
+
+  &--hot {
+    &::before {
+      mask-image: url("../../icons/menu/hot.svg");
+    }
+  }
+
+  &--gifts {
+    &::before {
+      mask-image: url("../../icons/menu/gifts.svg");
+    }
+  }
+
+  &--events {
+    &::before {
+      mask-image: url("../../icons/menu/events.svg");
+    }
+  }
+
+  &--brands {
+    &::before {
+      mask-image: url("../../icons/menu/brands.svg");
+    }
+  }
+
+  &--smartphones {
+    &::before {
+      mask-image: url("../../icons/smartphone.svg");
+    }
+  }
+
+  &--laptops {
+    &::before {
+      mask-image: url("../../icons/menu/laptops.svg");
+    }
+  }
+
+  &--desktops {
+    &::before {
+      mask-image: url("../../icons/menu/desktops.svg");
+    }
+  }
+
+  &--audio {
+    &::before {
+      mask-image: url("../../icons/menu/audio.svg");
+    }
+  }
+
+  &--promotion {
+    &::before {
+      mask-image: url("../../icons/menu/promotion.svg");
+    }
+  }
+
+  &--new {
+    &::before {
+      mask-image: url("../../icons/menu/new.svg");
     }
   }
 
@@ -145,16 +185,12 @@
     font-size: 20px;
 
     &::before {
-      background-image: url('../../icons/back-arrow.svg');
+      background-image: url("../../icons/back-arrow.svg");
+      background-color: unset;
     }
 
     &::after {
       display: none;
     }
-
-  }
-
-  &:hover {
-    opacity: .7;
   }
 }

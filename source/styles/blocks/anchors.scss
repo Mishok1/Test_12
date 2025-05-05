@@ -1,7 +1,5 @@
-.anchors {}
-
 .anchors__link {
-  color: #343A3F;
+  color: #343a3f;
   display: block;
   font-family: "Maza", sans-serif;
   font-weight: 400;
@@ -19,5 +17,11 @@
     @include desktop {
       display: none;
     }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #4888ff;
   }
 }

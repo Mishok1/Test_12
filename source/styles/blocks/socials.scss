@@ -1,17 +1,23 @@
-.socials {}
-
 .socials__link {
   width: 40px;
   height: 40px;
   padding: 10px;
   border-radius: 3.33px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   display: block;
 
   @include desktop {
     padding: 12px;
     width: 48px;
     height: 48px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    & svg path {
+      fill: #4888ff;
+    }
   }
 }
 

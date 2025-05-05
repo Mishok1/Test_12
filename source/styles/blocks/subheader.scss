@@ -1,7 +1,7 @@
 .subheader {
   padding: 4px 0;
-  background-color: #F4F4F4;
-  color: #343A3F;
+  background-color: #f4f4f4;
+  color: #343a3f;
   display: block;
   font-family: "Maza", sans-serif;
   font-weight: 400;
@@ -63,4 +63,8 @@
   padding: 0;
   display: flex;
   gap: 16px;
+
+  @include desktop {
+    gap: 11px;
+  }
 }
